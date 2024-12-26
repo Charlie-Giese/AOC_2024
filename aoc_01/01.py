@@ -28,7 +28,15 @@ def solve():
     for pair in sorted:
         sum += abs(pair[0] - pair[1])
 
-    print(sum)
+    print("Part 1 Answer: ", sum)
+
+    similarity_score = 0
+
+    for val in data[:, 0]:
+        similarity_score += len((data[:, 1])
+                                [np.where(data[:, 1] == val)]) * val
+
+    print("Part 2 Answer: ", similarity_score)
 
 
 solve()
